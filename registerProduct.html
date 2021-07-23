@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSP </title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./assets/GSP-Store.png" alt="logo">
+            </a>
+        </div>
+        <div class="title">
+            <h1>Página do Vendedor</h1>
+            <p>Faça a gestão do seu e-commerce atráves dessa página.</p>
+        </div>
+        <div class="buttons">
+            <button>Logout</button>
+        </div>
+    </header>
+
+
+    <main>
+
+        <button id="registerProduct" class="register">Cadastrar Produto</button>
+
+        <div class="table">
+            <table id="product-table">
+                <thead>
+                    <th>Nome do Produto</th>
+                    <th>Categoria</th>
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                    <th>Ação</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <br>
+
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Produto</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id="form" class="modal-form">
+                    <input type="text" id="name" placeholder="Nome do Produto" data-index="new" class="modal-field"
+                        required>
+                    <input type="text" id="category" placeholder="Categoria" class="modal-field" required>
+                    <input type="text" id="amount" placeholder="Quantidade" class="modal-field" required>
+                    <input type="text" id="price" placeholder="Preço" class="modal-field" required>
+                </form>
+                <footer class="modal-footer">
+                    <button id="save" class="modal-button green">Salvar</button>
+                    <button id="cancel" class="modal-button red">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+
+        <div id="navButton">
+            <button class="nav"><a href="./index.html">Voltar</a></button>
+        </div>
+    </main>
+    <footer>
+        <h4>&copy; Copyright 2021, <a target="_blank" href="https://github.com/gustavospriebe/">GSP Store.</a></h4>
+    </footer>
+    <script src="./script/products.js"></script>
+</body>
+
+</html>
